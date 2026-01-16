@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Паспорт №2734078 | Анатомия свободы</title>
+    
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Courier+Prime&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="lab-nav">
+        <a href="https://archiverats.ru" class="lab-link">← Лаборатория «Архивные крысы»</a>
+    </nav>
+
+    <main class="story-grid">
+        
+        <div class="visual-container">
+            <div id="passportViewer" class="passport-frame">
+                <img id="passportImage" src="img/cover.jpg" alt="Passport Page">
+                <div class="passport-overlay"></div> </div>
+
+            <div id="mapContainer" class="map-frame"></div>
+            
+            <div id="stampInfo" class="stamp-metadata">
+                <span id="stampDate">1953</span>
+                <span id="stampLoc">Frankfurt am Main</span>
+            </div>
+        </div>
+
+        <div class="narrative-container">
+            
+            <section class="step" data-img="img/cover.jpg" data-lat="50.1109" data-lng="8.6821" data-zoom="5" data-show-map="false">
+                <h1>Паспорт №2734078</h1>
+                <p class="subtitle">Анатомия свободы в послевоенной Европе</p>
+                <div class="text-block">
+                    <p>Этот документ — больше, чем удостоверение личности. Это хроника того, как Европа восставала из руин.</p>
+                    <p>Владелец: <strong>Эльза Шмидт</strong>. Профессия: Домохозяйка. Год выдачи: 1953.</p>
+                </div>
+            </section>
+
+            <section class="step" data-img="img/photo.jpg" data-lat="50.1109" data-lng="8.6821" data-zoom="6" data-show-map="true">
+                <h2>Мать и сын</h2>
+                <div class="text-block">
+                    <p>Франкфурт-на-Майне. 28 января 1953 года. Фотография прикреплена металлическими заклепками — характерная черта паспортов той эпохи.</p>
+                    <p>В документ вписан 10-летний сын, <strong>Клаус Петер</strong> (род. 1943). Впереди у них — открывающиеся границы Европы.</p>
+                </div>
+            </section>
+
+            <section class="step" data-img="img/austria.jpg" data-lat="47.8095" data-lng="13.0550" data-zoom="7" data-show-map="true">
+                <h2>Зона оккупации США</h2>
+                <div class="text-block">
+                    <p><strong>Март 1953.</strong> Путешествия еще не свободны. Чтобы попасть в Австрию, Эльзе требуется специальное разрешение.</p>
+                    <p class="highlight">«Permit to enter the US Zone of Austria»</p>
+                    <p>Этот штамп — эхо войны. Зальцбург все еще находится под управлением американского Верховного комиссара.</p>
+                </div>
+            </section>
+
+            <section class="step" data-img="img/italy.jpg" data-lat="46.3956" data-lng="13.2736" data-zoom="6" data-show-map="true">
+                <h2>Dolce Vita</h2>
+                <div class="text-block">
+                    <p><strong>1955–1957.</strong> Европа меняется. Штампы становятся хаотичными. Кьяссо, Резия, Остенде.</p>
+                    <p>Эльза и Клаус едут на юг, к морю. Начинается эпоха массового туризма. Границы становятся просто линиями на карте, а не стенами.</p>
+                </div>
+            </section>
+
+            <section class="step" data-img="img/klaus.jpg" data-lat="52.5200" data-lng="13.4050" data-zoom="10" data-show-map="true">
+                <h2>Взросление</h2>
+                <div class="text-block">
+                    <p><strong>Берлин, 1958 год.</strong> Последняя важная запись.</p>
+                    <p class="bureaucratic-text">«Kind Klaus-Peter... gestrichen»</p>
+                    <p>Клаусу исполняется 15 лет. Он получает свой собственный паспорт. История их совместного документа здесь заканчивается.</p>
+                </div>
+                
+                <div class="footer-note">
+                    <p>© 2026 Лаборатория <a href="https://archiverats.ru" class="hidden-link">Архивные крысы</a></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
